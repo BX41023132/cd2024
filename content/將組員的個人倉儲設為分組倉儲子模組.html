@@ -2,7 +2,7 @@
         <head>
         <title>cmsimde_site</title>
         <meta charset="utf-8">
-<meta property="head" content="H1">
+<meta property="head" content="H3">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <link href="https://fonts.googleapis.com/css?family=Quicksand:300,400,500,700,900" rel="stylesheet">
         <link rel="stylesheet" href="./../cmsimde/static/chimper/fonts/icomoon/style.css">
@@ -142,21 +142,20 @@ img.add_border {
           </div>
 
         </header>
-    <div id="tipue_search_content">cmsimde << <a href='cmsimde.html'>Previous</a> <a href='Brython.html'>Next</a> >> Brython<br /><h1>Replit</h1>
-<p><a href="https://replit.com">https://replit.com</a></p>
-<p>利用 init_replit 指令安裝所需 Python 模組<br/><br/>chmod u+x init_replit<br/><br/>./init_replit</p>
-<p dir="auto">On Replit:</p>
-<p dir="auto">.replit: python3 main.py</p>
-<p dir="auto">chmod u+x cms init_replit</p>
-<p dir="auto">./init_replit</p>
-<p dir="auto" style="padding-left: 30px;">for cmsimde_site (not needed): git submodule update --init --recursive</p>
-<p dir="auto" style="padding-left: 30px;">for cmsimde: pip install flask flask_cors bs4 lxml pelican markdown gevent</p>
-<p dir="auto">password generator: <a href="https://mde.tw/cmsite/content/Brython.html?src=https://gist.githubusercontent.com/mdecycu/b92b16621dd0246c352cf13d6463b333/raw/0bfa669750aba3abe48554509bbd43d65b6e5c82/hashlib_password_generator.py">https://mde.tw/cmsite/content/Brython.html?src=https://gist.githubusercontent.com/mdecycu/b92b16621dd0246c352cf13d6463b333/raw/0bfa669750aba3abe48554509bbd43d65b6e5c82/hashlib_password_generator.py</a> </p>
-<p dir="auto"></p>
-<p dir="auto">for IPv6 only Ubuntu:<br/><br/>.ssh 目錄中的 config, 將 SSH session 名稱設為 github.com:<br/><br/>Host github.com<br/>User git<br/>Hostname github.com<br/>ProxyCommand /usr/bin/ncat --proxy p4.cycu.org:3128 --proxy-type http %h %p<br/><br/>for Replit:<br/><br/>.ssh 目錄中的 config, 將 SSH session 名稱設為 github.com:<br/><br/>Host github.com<br/>User git<br/>Hostname github.co<br/>#since Replit works for IPv4, therefore no ProxyCommand setting needed<br/>#ProxyCommand /usr/bin/ncat --proxy p4.cycu.org:3128 --proxy-type http %h %p</p>
+    <div id="tipue_search_content">W3-0307:個人倉儲設為分組倉儲之子模組 << <a href='W3-0307:個人倉儲設為分組倉儲之子模組.html'>Previous</a> <a href='W3心得.html'>Next</a> >> W3心得<br /><h1>將組員的個人倉儲設為分組倉儲子模組</h1>
+<p>以 submodule 的方式納入各分組倉儲與網站, 設定的指令為:</p>
+<p>git submodule add 組員的個人倉儲網址 組員的學號</p>
+<p>例如: 假設組員的 cd2024 個人倉儲位於: https://github.com/scrum-1/cd2024, 且該組員的學號為 41123299, 則該組員必須在進入該組的倉儲目錄後, 執行:</p>
+<p>git submodule add https://github.com/scrum-1/cd2024.git 41123299</p>
+<p>如此, Github 帳號為 scrum-1 的組員, 其個人倉儲就會設定為分組倉儲的子模組, 而且是以其學號命名此一子模組的目錄名稱. 這樣設定的好處是: 各組員可以自行管理個人的課程倉儲與網站, 也就是位於其 Github 帳號下的 cd2024, 並且自行決定要整合到分組倉儲與網站的版本. 也能將自己在課程網站的資料, 直接用連結導入分組網站, 無需額外將資料搬進分組倉儲.</p>
+<p>另外一個使用 Github Classroom 派送分組倉儲的好處, 是 mdecycu 自動成為各分組倉儲的管理者之一, 若各組在改版或解決衝突的過程發生問題, mdecycu 可以協助處理.</p>
+<p>一旦分組倉儲帶有以各組員學號作為子模組之後, git clone 倉儲必須使用:</p>
+<p>git clone --recurse-submodules 加上各組的倉儲 URL</p>
+<p>以第一組期中分組倉儲的 git clone 為例, 並且使用 putty session 名稱 github.com:</p>
+<p>git clone --recurse-submodules git@github.com:mdecd2024/2b-midbg1.git</p>
+<p>而且若要在分組倉儲中更新各組員的子模組版本, 則必須更換目錄到該組員的學號目錄中並且使用 git pull origin main, 才能取下該組員其 cd2024 個人倉儲的最新內容. 取下組員資料後, 若要新增提交推送, 則必須再更換目錄回分組倉儲後才能執行.</p>
 <p></p>
-<p></p>
-<br />cmsimde << <a href='cmsimde.html'>Previous</a> <a href='Brython.html'>Next</a> >> Brython</div>
+<br />W3-0307:個人倉儲設為分組倉儲之子模組 << <a href='W3-0307:個人倉儲設為分組倉儲之子模組.html'>Previous</a> <a href='W3心得.html'>Next</a> >> W3心得</div>
 
     <!-- footer -->
       <div class="container">
