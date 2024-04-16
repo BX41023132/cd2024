@@ -8,7 +8,7 @@
 <p>分組網站:<a href="https://mdecd2024.github.io/2b-midbg8/">https://mdecd2024.github.io/2b-midbg8/</a></p>
 <h1>Class content</h1>
 <h2>W1-0222:本學期上課內容講解、建立編輯個人倉儲、網站架設。</h2>
-<h3>上課內容講解</h3>
+<h4>上課內容講解</h4>
 <h4>課程目標:</h4>
 <ol>
 <li>讓學員了解如何利用 Web-based 環境(<a href="https://github.com/">Github</a>、<a href="https://www.onshape.com/">Onshape</a>)、近端套件(<a href="https://www.coppeliarobotics.com/">CoppeliaSim</a>) 以及<span> </span><a href="https://www.odoo.com/app/plm">Odoo PLM</a><span> </span>系統進行協同產品設計,<span> </span><a href="https://national-formosa-university.odoo.com/">https://national-formosa-university.odoo.com</a>.</li>
@@ -34,23 +34,21 @@
 <p>將球踢進對方球門者得 1 分, 將球投入對方籃框者得 5 分)</p>
 <p></p>
 <h4></h4>
-<h3>建立個人倉儲</h3>
+<h4>建立個人倉儲</h4>
 <p>登入 github.com, 連結到<span> </span><a href="https://github.com/mdecycu/cmsimde_site">https://github.com/mdecycu/cmsimde_site</a>, 利用此倉儲作為 Template, 新增一個名稱為 cd2024 的倉儲, 並且將其 main 分支設為網頁根目錄.</p>
 <p><a href="https://github.com/mdecycu/cmsimde_site">https://github.com/mdecycu/cmsimde_site</a><span> </span>與<span> </span><a href="https://github.com/mdecycu/cmsite">https://github.com/mdecycu/cmsite</a><span> </span>的差別為, 目前的 Template 將 cmsimde 當作目錄, 而非 cmsite 中的子模組.</p>
-<h3>W1心得</h3>
 <p></p>
 <p></p>
 <h2>W2-0229:分組分工、加入Classroom、建立分組倉儲。</h2>
-<h3>建立分組倉儲</h3>
+<h4>建立分組倉儲</h4>
 <p>由於各分組網站從 Github Classroom 執行配置, 因此該倉儲位於 mdecd2024 帳號下, 雖然各組組員具備對此分組倉儲改版的權限, 但是若將分組倉儲 import 到 Replit, 因為其倉儲擁有者為 mdecd2024, 因此無法從 Replit accoount 項下進行授權, 但是可以利用 ssh-keygen 建立 .ssh 目錄下的 id_rsa 與 id_rsa.pub, 之後除了將公鑰送到 Github 之外, 還需要在 .ssh 目錄中建立 config, 且將倉儲 .git/config 中的 https 協定改為 SSH.</p>
 <p>根據上述流程, 可以在 Replit 中以 SSH 模式取得對 Github 帳號下特定倉儲的改版全縣, 只不過 Replit 的免費帳號環境會不定時刪除 /home/runner/.ssh 目錄中的授權資料, 因此若要使用 Replit 維護從 Github Classroom 取得授權的分組倉儲, 必須使用程式方法配置 .ssh 中的 id_rsa 與 config 檔案.</p>
 <p>2b-midbg8倉儲:</p>
 <p>midbg8倉儲:<a href="https://github.com/mdecd2024/2b-midbg8">https://github.com/mdecd2024/2b-midbg8</a></p>
 <p>分組網站:<a href="https://mdecd2024.github.io/2b-midbg8/">https://mdecd2024.github.io/2b-midbg8/</a></p>
-<h3>W2心得</h3>
 <p><br/><br/></p>
 <h2>W3-0307:個人倉儲設為分組倉儲之子模組</h2>
-<h3>將組員的個人倉儲設為分組倉儲子模組</h3>
+<h4>將組員的個人倉儲設為分組倉儲子模組</h4>
 <p>以 submodule 的方式納入各分組倉儲與網站, 設定的指令為:</p>
 <p>git submodule add 組員的個人倉儲網址 組員的學號</p>
 <p>例如: 假設組員的 cd2024 個人倉儲位於: https://github.com/scrum-1/cd2024, 且該組員的學號為 41123299, 則該組員必須在進入該組的倉儲目錄後, 執行:</p>
@@ -66,31 +64,38 @@
 <p></p>
 <h2>W4-0314:翻議論文、git branch</h2>
 <p></p>
-<p>翻譯工作分配</p>
+<h4>翻譯工作分配</h4>
 <p>41023132:P1-44</p>
 <p><a href="/downloads/41023132-P1-44.pdf">/downloads/41023132-P1-44.pdf</a></p>
 <p>41039138:P45-87</p>
-<h3>W4心得</h3>
-<p><span></span></p>
 <h2>W5-0321:影片整理(字幕)、分組網誌的統整、NX 零組件繪圖</h2>
-<h3>工作分配</h3>
+<h4>工作分配</h4>
 <p><span>41023132影片1-7</span></p>
 <p><span>41039138影片8-14</span></p>
-<h3>W5心得</h3>
 <p><span></span></p>
 <h2>W6-0328:說明協同 NX 零組件繪圖、 CoppeliaSim 場景模擬相關檔案格式</h2>
+<h4>ODOO PLM 論文中英並列任務</h4>
+<p>由各組員在其個人的 cd2024 倉儲中, 以 LaTeX 格式分工完成下列文章的英文與中文翻譯並列資料, 最後在分組網站的 Release 或 downloads 區完成 2b-midbgx_report.pdf 的製作.</p>
+<p>若要在近端使用可攜程式環境編譯分組 LaTeX 報告, 請下載<span> </span><a href="http://229.cycu.org/miktex-portable.7z">miktex-portable.7z</a><span> </span>(需要密碼, 下載 167MB, 解開壓縮檔案後約 1GB) 以及參考資料:<span> </span><a href="http://229.cycu.org/latex_images_github.7z">latex_images_github.7z</a><span> </span>(需要密碼)</p>
+<p><a href="https://webthesis.biblio.polito.it/16429/1/tesi.pdf">2021 ANALYSIS OF THE ODOO SOFTWARE CAPABILITIES REGARDING PRODUCT LIFECYCLE MANAGEMENT, MANUFACTURING EXECUTION SYSTEMS AND THEIR INTEGRATION.pdf</a><span> </span>or<span> </span><a href="http://229.cycu.org/2021%20ANALYSIS%20OF%20THE%20ODOO%20SOFTWARE%20CAPABILITIES%20REGARDING%20PRODUCT%20LIFECYCLE%20MANAGEMENT,%20MANUFACTURING%20EXECUTION%20SYSTEMS%20AND%20THEIR%20INTEGRATION.pdf">local</a><span> </span>download (password required) (Odoo 軟體在產品生命週期管理、製造執行系統及其整合上的功能分析)</p>
+<p>英文單字查詢:<span> </span><a href="https://mde.tw/cd2024/downloads/2021_odoo_reading.html">2021_odoo_reading.html</a></p>
+<h4>教學影片分組整理並自評</h4>
+<p>請各組自行搜尋前面已經發布的教學影片, 分別</p>
+<ul>
+<li>在影片上填上字幕, 另行上傳到可以嵌入到各分組的網站上</li>
+<li>從影片字幕中整理出逐字稿, 放在影片下方, 以 .txt 連結安排</li>
+<li>並在各嵌入的教學影片下方, 以摘要方式說明該影片的教學重點</li>
+</ul>
 <p><span></span></p>
-<h3>W6心得</h3>
 <p><span></span></p>
-<h2>W8-0411:</h2>
-<h3>W8心得</h3>
-<p><span></span></p>
+<p></p>
+<p></p>
 <h1>Group</h1>
 <h2>分組名單</h2>
 <p>41039138凃家豐</p>
 <p>41023132林秉賢:<span>翻譯P1-44</span></p>
 <p><span><a href="/downloads/41023132-P1-44.pdf">/downloads/41023132-P1-44.pdf</a></span></p>
-<h1>HW</h1>
+<h1>W5-HW</h1>
 <p>1</p>
 <p><iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="allowfullscreen" frameborder="0" height="315" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/JyGRsX7UTo0?si=J5QqU1686hVdSUt3" title="YouTube video player" width="560"></iframe></p>
 <p></p>
@@ -120,7 +125,8 @@
 <p><iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="allowfullscreen" frameborder="0" height="315" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/aBmgPXlqnRw?si=jb3ffDvQvP31W723" title="YouTube video player" width="560"></iframe></p>
 <p></p>
 <p><span><a href="/downloads/7利用 codespaces 維護分組網站.txt">/downloads/7利用 codespaces 維護分組網站.txt</a></span></p>
-<p><span><a href="/downloads/1cd2024_2b_1_建立個人課程倉儲與網站.mp4"></a></span></p><h1>cmsimde</h1>
+<p><span><a href="/downloads/1cd2024_2b_1_建立個人課程倉儲與網站.mp4"></a></span></p>
+<h1>cmsimde</h1>
 <p><span style="background-color: #ccffcc;">SMap</span> - SiteMap - 依照階次列出網站的所有頁面.</p>
 <p><span style="background-color: #ccffcc;">EditA</span> - Edit All page - 將所有頁面放入編輯模式中, 主要用來處理頁面搬遷, 刪除或決定衝突頁面內容版本.</p>
 <p><span style="background-color: #ccffcc;">Edit</span> - Edit page - 先選擇要編輯的單一頁面後, 再點選 Edit, 即可進入單一頁面的編輯模式.</p>
