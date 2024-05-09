@@ -149,8 +149,37 @@
 <li>學習如何建立場景控制程式（internal Lua、Python、Remoteapi Python、IPv4 Websocket&amp;ZMQ vs IPv6 Websocket&amp;ZMQ)</li>
 <li>了解如何協同整理資料、編寫網誌、建立網際簡報及結案報告</li>
 </ol>
-<p><span></span></p>
+<h2>W12-0509</h2>
+<h4>NXOpen 實習項目一</h4>
+<p>以下影片說明如何設定 Siemens NX Journal 存檔格式, 並且利用 NXOpen 程式分別執行建立 block 與挖孔 (透過錄製 Journal 程式產生)後, 請設法將兩個程式合併為一個程式, 可以直接完成建立一個 block 並在其特定面上挖孔.</p>
+<h4></h4>
+<p>實習任務二: 將分組倉儲設為評分網站子模組</p>
+<p>2a 評分倉儲:<span> </span><a href="https://github.com/mdecd2024/2astud-2asite">https://github.com/mdecd2024/2astud-2asite</a></p>
+<p>2b 評分倉儲:<span> </span><a href="https://github.com/mdecd2024/2bstud-2bsite">https://github.com/mdecd2024/2bstud-2bsite</a></p>
+<p>以 2a 第一組分組倉儲<span> </span><a href="https://github.com/mdecd2024/2a-midag1">https://github.com/mdecd2024/2a-midag1</a><span> </span>為例, 設為 2astud-2asite 倉儲名稱為 g1 的子模組指令為:</p>
+<p>git submodule add https://github.com/mdecd2024/2a-midag1 g1</p>
+<p>其餘各班與各組的子模組則依序命名為 g1, g2, g3 ......, 依此類推.</p>
+<p>各班評分倉儲的各組子模組設定完成後, 可以設法依照先前各組整合分組 LaTeX 報告與分組網誌的方法, 整合全班各組項下各學員的網誌文章 (.html 格式) 與執行專案報告 (.pdf 格式)</p>
+<p>請各分組先在各組的分組網誌與分組報告中說明, 該如何將分組整合流程擴大到全班協同?</p>
 <p></p>
+<section class="post-content">
+<p>實習任務三: 跨網路操控足球機器人進行競技</p>
+<p>請各組從<span> </span><a href="https://github.com/mdecd2023/2a3-pj3ag4">https://github.com/mdecd2023/2a3-pj3ag4</a><span> </span>下載該組當時所完成的倉儲資料, 並參考<a href="https://github.com/mdecd2023/2a3-pj3ag4/releases/tag/v0.0.2">網際手足球機器人場景設計</a>專案報告, 由各組員分別擔任場景競技球員, 利用鍵盤跨網路操控足球機器人進行球賽競技.</p>
+<p>執行步驟:</p>
+<ol>
+<li>在可攜程式系統安裝所需的 Python 模組: pip install pyzmq cbor keyboard</li>
+<li>在近端電腦上取下倉儲內容: git clone https://github.com/mdecd2023/2a3-pj3ag4</li>
+<li>球場、球員、數位計分器與類比計分器場景, 以及機器人球員控制程式位於: 2a3-pj3ag4\downloads\zmq_football 目錄</li>
+<li>利用<span> </span><a href="http://229.cycu.org/CoppeliaSimEdu_4.5.1_rev4_for_cd2023.7z">CoppeliaSim 4.5.1 rev1 for IPv6.7z</a><span> </span>開啟 zmq_football 目錄中的 site.ttt</li>
+<li>利用可攜程式系統中的 SciTE 編輯器開啟 zmq_football 目錄中的 judge.py, 按下 Tools - Go 之後, CoppeliaSim 中的足球場景將開始進行模擬, 足球從球場正中央拋下, 兩隊球員完成列隊, 準備接受遠端 ZMQ RemoteAPI Python 程式操控, 以便進行球賽競技.</li>
+<li>各球員操控程式可跨 IPv4 與 IPv6 網路對場景中的機器人球員進行控制, 球場即時畫面可由 http://球場所在電腦_IP_位址或符號名稱:23020 擷取, 球場與控制端的防火牆必須允許雙方 ZMQ 網路封包通過 port 23000 與 23020, 其中 23000 用於 Python 程式控制, 而 23020 則用於網際 Visualization Stream 影像串流用.</li>
+<li>各球員控制端, 分別在各自電腦以可攜程式系統中的 SciTE 編輯器開啟 zmq_football 目錄中的 player.py, 並依據球員編號進行動作操控.</li>
+<li>鍵盤中的 a 鍵控制球員向左轉, d 鍵控制球員向右轉, w 向前移動, s 向後移動, space 鍵翻身, 按下 shift 鍵將加速並轉向, 按下 q 鍵則終止模擬.</li>
+</ol>
+</section>
+<section class="post-info">
+<aside class="post-tags"><a href="https://mde.tw/cd2024/blog/tag/w12.html">w12</a><a href="https://mde.tw/cd2024/blog/tag/nx.html">NX</a><a href="https://mde.tw/cd2024/blog/tag/evaluation.html">evaluation</a></aside>
+</section>
 <h1>Group</h1>
 <h2>分組名單</h2>
 <p>41039138凃家豐</p>
