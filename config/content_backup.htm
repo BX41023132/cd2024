@@ -16,7 +16,8 @@
 <h1>課程摘要</h1>
 <p></p>
 <p></p>
-<h2>W1-0222:本學期上課內容講解、建立編輯個人倉儲、網站架設。</h2>
+<h2>W1-0222</h2>
+<h4>本學期上課內容講解、建立編輯個人倉儲、網站架設。</h4>
 <h6>上課內容講解</h6>
 <h6>課程目標:</h6>
 <ol>
@@ -52,7 +53,8 @@
 <h6><a href="https://github.com/mdecycu/cmsimde_site">https://github.com/mdecycu/cmsimde_site</a><span> </span>與<span> </span><a href="https://github.com/mdecycu/cmsite">https://github.com/mdecycu/cmsite</a><span> </span>的差別為, 目前的 Template 將 cmsimde 當作目錄, 而非 cmsite 中的子模組.</h6>
 <h4></h4>
 <h4></h4>
-<h2>W2-0229:分組分工、加入Classroom、建立分組倉儲。</h2>
+<h2>W2-0229</h2>
+<h4>分組分工、加入Classroom、建立分組倉儲。</h4>
 <h6>建立分組倉儲</h6>
 <h6>由於各分組網站從 Github Classroom 執行配置, 因此該倉儲位於 mdecd2024 帳號下, 雖然各組組員具備對此分組倉儲改版的權限, 但是若將分組倉儲 import 到 Replit, 因為其倉儲擁有者為 mdecd2024, 因此無法從 Replit accoount 項下進行授權, 但是可以利用 ssh-keygen 建立 .ssh 目錄下的 id_rsa 與 id_rsa.pub, 之後除了將公鑰送到 Github 之外, 還需要在 .ssh 目錄中建立 config, 且將倉儲 .git/config 中的 https 協定改為 SSH.</h6>
 <h6>根據上述流程, 可以在 Replit 中以 SSH 模式取得對 Github 帳號下特定倉儲的改版全縣, 只不過 Replit 的免費帳號環境會不定時刪除 /home/runner/.ssh 目錄中的授權資料, 因此若要使用 Replit 維護從 Github Classroom 取得授權的分組倉儲, 必須使用程式方法配置 .ssh 中的 id_rsa 與 config 檔案.</h6>
@@ -60,7 +62,8 @@
 <h6>midbg8倉儲:<a href="https://github.com/mdecd2024/2b-midbg8">https://github.com/mdecd2024/2b-midbg8</a></h6>
 <h6>分組網站:<a href="https://mdecd2024.github.io/2b-midbg8/">https://mdecd2024.github.io/2b-midbg8/</a></h6>
 <h4><br/><br/></h4>
-<h2>W3-0307:個人倉儲設為分組倉儲之子模組</h2>
+<h2>W3-0307</h2>
+<h4>個人倉儲設為分組倉儲之子模組</h4>
 <h6>將組員的個人倉儲設為分組倉儲子模組</h6>
 <h6>以 submodule 的方式納入各分組倉儲與網站, 設定的指令為:</h6>
 <h6>git submodule add 組員的個人倉儲網址 組員的學號</h6>
@@ -75,18 +78,21 @@
 <h6>而且若要在分組倉儲中更新各組員的子模組版本, 則必須更換目錄到該組員的學號目錄中並且使用 git pull origin main, 才能取下該組員其 cd2024 個人倉儲的最新內容. 取下組員資料後, 若要新增提交推送, 則必須再更換目錄回分組倉儲後才能執行.</h6>
 <h6></h6>
 <h4></h4>
-<h2>W4-0314:翻議論文、git branch</h2>
+<h2>W4-0314</h2>
+<h4>翻議論文、git branch</h4>
 <h4></h4>
 <h6>翻譯工作分配</h6>
 <h6>41023132:P1-44</h6>
 <h6><a href="/downloads/41023132-P1-44.pdf">/downloads/41023132-P1-44.pdf</a></h6>
 <h6>41039138:P45-87</h6>
-<h2>W5-0321:影片整理(字幕)、分組網誌的統整、NX 零組件繪圖</h2>
+<h2>W5-0321</h2>
+<h4>影片整理(字幕)、分組網誌的統整、NX 零組件繪圖</h4>
 <h6>工作分配</h6>
 <h6><span>41023132影片1-7</span></h6>
 <h6><span>41039138影片8-14</span></h6>
 <h4><span></span></h4>
-<h2>W6-0328:說明協同 NX 零組件繪圖、 CoppeliaSim 場景模擬相關檔案格式</h2>
+<h2>W6-0328</h2>
+<h4>說明協同 NX 零組件繪圖、 CoppeliaSim 場景模擬相關檔案格式</h4>
 <h6>ODOO PLM 論文中英並列任務</h6>
 <h6>由各組員在其個人的 cd2024 倉儲中, 以 LaTeX 格式分工完成下列文章的英文與中文翻譯並列資料, 最後在分組網站的 Release 或 downloads 區完成 2b-midbgx_report.pdf 的製作.</h6>
 <h6>若要在近端使用可攜程式環境編譯分組 LaTeX 報告, 請下載<span> </span><a href="http://229.cycu.org/miktex-portable.7z">miktex-portable.7z</a><span> </span>(需要密碼, 下載 167MB, 解開壓縮檔案後約 1GB) 以及參考資料:<span> </span><a href="http://229.cycu.org/latex_images_github.7z">latex_images_github.7z</a><span> </span>(需要密碼)</h6>
@@ -106,14 +112,16 @@
 </li>
 </ul>
 <h4><span></span></h4>
-<h2>W9-0418:介紹AI</h2>
+<h2>W9-0418</h2>
+<h4>期中考週、介紹AI</h4>
 <p></p>
-<p></p>
+<p>自評成績:70</p>
 <h6><a href="https://aistudio.google.com/">https://aistudio.google.com/</a></h6>
 <h6><a href="https://claude.ai/">https://claude.ai/</a></h6>
 <p></p>
 <p></p>
-<h2>W10-0425:鋼球平衡台模擬控制</h2>
+<h2>W10-0425</h2>
+<h4>鋼球平衡台模擬控制</h4>
 <h6>參考資料:(<a href="https://mde.tw/cd2024/blog/2024-cd-midterm.html">https://mde.tw/cd2024/blog/2024-cd-midterm.html</a>)</h6>
 <h6>python 3.12 必須自行編譯 python-control 模組:</h6>
 <ol>
@@ -132,9 +140,9 @@
 </ol>
 <p><br/><span></span></p>
 <p></p>
-<h2>W11-0502:利用NX1872繪製剛求平衡台所需的零組件</h2>
+<h2>W11-0502</h2>
+<h4>利用NX1872繪製剛求平衡台所需的零組件</h4>
 <p></p>
-<p><span></span></p>
 <p><span></span></p>
 <h6>請根據<span> </span><a href="https://mde.tw/cd2024/downloads/Solvespace_model%20_2d_for_cd2024_w6.7z">Solvespace_model _2d_for_cd2024_w6.7z</a><span> </span>零組件尺寸, 利用<span> </span><a href="https://nfuedu-my.sharepoint.com/:u:/g/personal/yen_nfu_edu_tw/EehhlaMDzTxAlOBppbPSoPwBCzsOQxvshtNL8xJel-zbJQ?e=YwKvdH">Siemens NX1872.7z</a><span> </span>(需要登入 @nfu.edu.tw, cd2024 採用電腦安裝的 NX1872 或隨身碟中的 NX1872) 執行零組件繪圖, 完成後請將過程影片放入個人與分組網站中.</h6>
 <h6>建立協同 Web-based 機電系統模擬設計必須涉及的議題包括：</h6>
