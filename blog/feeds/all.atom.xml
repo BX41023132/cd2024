@@ -1,8 +1,71 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>41023132協同產品設計實習</title><link href="./" rel="alternate"></link><link href="./feeds/all.atom.xml" rel="self"></link><id>./</id><updated>2024-04-25T13:20:00+08:00</updated><entry><title>協同產品設計實習 W10</title><link href="./2024-Spring-w10-blog-tutorial.html" rel="alternate"></link><published>2024-04-25T13:20:00+08:00</published><updated>2024-04-25T07:56:26+08:00</updated><author><name>41023132</name></author><id>tag:None,2024-04-25:./2024-Spring-w10-blog-tutorial.html</id><summary type="html">&lt;p&gt;2024 Spring W10 CLASS CONTENT.&lt;/p&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>41023132協同產品設計實習</title><link href="./" rel="alternate"></link><link href="./feeds/all.atom.xml" rel="self"></link><id>./</id><updated>2024-05-16T05:52:24+08:00</updated><entry><title>協同產品設計實習 W12</title><link href="./2024-Spring-w12-blog-tutorial.html" rel="alternate"></link><published>2024-05-09T13:20:00+08:00</published><updated>2024-05-16T05:52:24+08:00</updated><author><name>41023132</name></author><id>tag:None,2024-05-09:./2024-Spring-w12-blog-tutorial.html</id><summary type="html">&lt;p&gt;2024 Spring W12 CLASS CONTENT.&lt;/p&gt;
+</summary><content type="html">&lt;p&gt;2024 Spring W12 CLASS CONTENT.&lt;/p&gt;
+
+
+&lt;h1&gt;心得&lt;/h1&gt;
+&lt;p&gt;這週我分配到任務一，有老師的影片輔助我覺得有很大的幫助。&lt;/p&gt;
+&lt;p&gt;這個任務可以讓我更清楚程式的應用。&lt;/p&gt;
+&lt;h1&gt;w12-0509 Class Content&lt;/h1&gt;
+&lt;h2&gt;實習任務一&lt;/h2&gt;
+&lt;p&gt;以W12 blog 影片中說明如何設定 Siemens NX Journal 存檔格式, 並且利用 NXOpen 程式分別執行建立 block 與挖孔 (透過錄製 Journal 程式產生)後, 請設法將兩個程式合併為一個程式, 可以直接完成建立一個 block 並在其特定面上挖孔.
+https://replit.com/@41023132/cd2024#downloads/journal.py
+https://replit.com/@41023132/cd2024#downloads/nxopen_create_a_new_part.py&lt;/p&gt;
+&lt;h2&gt;實習任務二: 將分組倉儲設為評分網站子模組&lt;/h2&gt;
+&lt;p&gt;2a 評分倉儲: https://github.com/mdecd2024/2astud-2asite&lt;/p&gt;
+&lt;p&gt;2b 評分倉儲: https://github.com/mdecd2024/2bstud-2bsite&lt;/p&gt;
+&lt;p&gt;以 2a 第一組分組倉儲 https://github.com/mdecd2024/2a-midag1 為例, 設為 2astud-2asite 倉儲名稱為 g1 的子模組指令為:&lt;/p&gt;
+&lt;p&gt;git submodule add https://github.com/mdecd2024/2a-midag1 g1&lt;/p&gt;
+&lt;h2&gt;實習任務三: 跨網路操控足球機器人進行競技&lt;/h2&gt;
+&lt;p&gt;請各組從 https://github.com/mdecd2023/2a3-pj3ag4 下載該組當時所完成的倉儲資料, 並參考網際手足球機器人場景設計專案報告, 由各組員分別擔任場景競技球員, 利用鍵盤跨網路操控足球機器人進行球賽競技.&lt;/p&gt;
+&lt;p&gt;執行步驟:&lt;/p&gt;
+&lt;p&gt;在可攜程式系統安裝所需的 Python 模組: pip install pyzmq cbor keyboard
+在近端電腦上取下倉儲內容: git clone https://github.com/mdecd2023/2a3-pj3ag4
+球場、球員、數位計分器與類比計分器場景, 以及機器人球員控制程式位於: 2a3-pj3ag4\downloads\zmq_football 目錄
+利用 CoppeliaSim 4.5.1 rev1 for IPv6.7z 開啟 zmq_football 目錄中的 site.ttt
+利用可攜程式系統中的 SciTE 編輯器開啟 zmq_football 目錄中的 judge.py, 按下 Tools - Go 之後, CoppeliaSim 中的足球場景將開始進行模擬, 足球從球場正中央拋下, 兩隊球員完成列隊, 準備接受遠端 ZMQ RemoteAPI Python 程式操控, 以便進行球賽競技.
+各球員操控程式可跨 IPv4 與 IPv6 網路對場景中的機器人球員進行控制, 球場即時畫面可由 http://球場所在電腦_IP_位址或符號名稱:23020 擷取, 球場與控制端的防火牆必須允許雙方 ZMQ 網路封包通過 port 23000 與 23020, 其中 23000 用於 Python 程式控制, 而 23020 則用於網際 Visualization Stream 影像串流用.
+各球員控制端, 分別在各自電腦以可攜程式系統中的 SciTE 編輯器開啟 zmq_football 目錄中的 player.py, 並依據球員編號進行動作操控.
+鍵盤中的 a 鍵控制球員向左轉, d 鍵控制球員向右轉, w 向前移動, s 向後移動, space 鍵翻身, 按下 shift 鍵將加速並轉向, 按下 q 鍵則終止模擬.&lt;/p&gt;</content><category term="w12"></category><category term="網誌編寫"></category></entry><entry><title>協同產品設計實習 W11</title><link href="./2024-Spring-w11-blog-tutorial.html" rel="alternate"></link><published>2024-05-02T13:20:00+08:00</published><updated>2024-05-16T05:50:27+08:00</updated><author><name>41023132</name></author><id>tag:None,2024-05-02:./2024-Spring-w11-blog-tutorial.html</id><summary type="html">&lt;p&gt;2024 Spring W11 CLASS CONTENT.&lt;/p&gt;
+</summary><content type="html">&lt;p&gt;2024 Spring W11 CLASS CONTENT.&lt;/p&gt;
+
+
+&lt;h1&gt;心得&lt;/h1&gt;
+&lt;p&gt;利用ｓｏｌｖｅｓｐａｃｅ查看尺寸，&lt;/p&gt;
+&lt;p&gt;再用ＮＸ繪製圖形。&lt;/p&gt;
+&lt;p&gt;我分配到４個要繪製，我覺得畫起來還蠻順手。&lt;/p&gt;
+&lt;h1&gt;w11-0502 Class Content&lt;/h1&gt;
+&lt;h2&gt;鋼球平衡台自動控制系統模擬&lt;/h2&gt;
+&lt;p&gt;請根據 Solvespace_model _2d_for_cd2024_w6.7z 零組件尺寸, 
+利用 Siemens NX1872.7z 
+(需要登入 @nfu.edu.tw, cd2024 採用電腦安裝的 NX1872 或隨身碟中的 NX1872) 
+執行零組件繪圖, 完成後請將過程影片放入個人與分組網站中.&lt;/p&gt;
+&lt;p&gt;分工:&lt;/p&gt;
+&lt;p&gt;41039138&lt;/p&gt;
+&lt;p&gt;https://replit.com/@41023132/cd2024#downloads/platform.prt&lt;/p&gt;
+&lt;p&gt;41023132&lt;/p&gt;
+&lt;p&gt;https://replit.com/@41023132/cd2024#downloads/base.prt&lt;/p&gt;
+&lt;p&gt;https://replit.com/@41023132/cd2024#downloads/s_link.prt&lt;/p&gt;
+&lt;p&gt;https://replit.com/@41023132/cd2024#downloads/shaft.prt&lt;/p&gt;
+&lt;p&gt;https://replit.com/@41023132/cd2024#downloads/y_link.prt&lt;/p&gt;
+&lt;h2&gt;各週指定任務如下&lt;/h2&gt;
+&lt;p&gt;1.個人 cd2024 與分組倉儲的建立及維護.&lt;/p&gt;
+&lt;p&gt;2.各分組註冊一個 Odoo 帳號, 選用免費的 PLM 模組, 取得各分組的產品生命週期管理系統網域, 並將參考論文的協同翻譯流程作為工作項目, 在各分組的 PLM 網域系統中留下任務分配與紀錄, 最終產出為一份參考論文的中英文翻譯並列 pdf 檔案, 其中包含各組員的心得報告.&lt;/p&gt;
+&lt;p&gt;3.指定在參考論文的翻譯與閱讀過程, 將各組員的 cd2024 課程倉儲納為分組倉儲的子模組, 可以將各組員倉儲中的 LaTeX 原始資料, 整合至分組倉儲中, 採 Github Actions 或近端使用 MikTeX 建立分組的參考論文閱讀報告 pdf 檔案(教學).&lt;/p&gt;
+&lt;p&gt;4.要求各分組採協同方式, 在各教學影片上填上字幕並嵌入個人網站, 分工整理影片逐字稿與教學重點, 最後完成期中自評, 在期中考週將自評成績送至教務處.&lt;/p&gt;
+&lt;p&gt;5.要求下載 Siemens NX 1872 至個人隨身碟或電腦 (含筆電), 後續專案系統的零組件繪圖可採電腦輔助設計室固態硬碟所安裝的 NX1872 或隨身碟中的可攜系統, 必須透過連網取得認證後才能開啟.&lt;/p&gt;
+&lt;p&gt;6.提醒 CoppeliaSim 不同版本中存檔上的差異, 並強調 cd2024 將沿用 cad2023 課程中所使用的 4.5.1 版.&lt;/p&gt;
+&lt;p&gt;7.各分組可以利用可攜式 Sourcetree 套件, 在近端充分了解個人倉儲與分組倉儲的各種改版或解決衝突議題.&lt;/p&gt;
+&lt;p&gt;8.在第七週摘要出 cd2024 各項分組協同模式的要點及執行方法.&lt;/p&gt;
+&lt;p&gt;9.在第八週說明如何應用 AI 協助先前閱讀論文, 整理資料以及延伸模擬程式的方法, 並提出既存鋼球平衡台控制與模擬的實習步驟.&lt;/p&gt;
+&lt;p&gt;10.第十週起, 要求學員完成三項實習任務.&lt;/p&gt;</content><category term="w11"></category><category term="網誌編寫"></category></entry><entry><title>協同產品設計實習 W10</title><link href="./2024-Spring-w10-blog-tutorial.html" rel="alternate"></link><published>2024-04-25T13:20:00+08:00</published><updated>2024-05-16T05:47:45+08:00</updated><author><name>41023132</name></author><id>tag:None,2024-04-25:./2024-Spring-w10-blog-tutorial.html</id><summary type="html">&lt;p&gt;2024 Spring W10 CLASS CONTENT.&lt;/p&gt;
 </summary><content type="html">&lt;p&gt;2024 Spring W10 CLASS CONTENT.&lt;/p&gt;
 
 
+&lt;h1&gt;心得&lt;/h1&gt;
+&lt;p&gt;期中之後要用期末的東西，這週在介紹鋼球平衡台，&lt;/p&gt;
+&lt;p&gt;ＮＸ在之前有學過，但用隨身碟內的開會變很當，&lt;/p&gt;
+&lt;p&gt;所以我習慣用學校的用。&lt;/p&gt;
 &lt;h1&gt;w10-0425 Class Content&lt;/h1&gt;
 &lt;h2&gt;課程活動&lt;/h2&gt;
 &lt;h2&gt;協同資料處理&lt;/h2&gt;
@@ -44,34 +107,45 @@
 &lt;h3&gt;Construction and theoretical study&lt;/h3&gt;
 &lt;p&gt;這篇論文的摘要涵蓋了控制理論及其應用對動態系統的重要性，特別是在補償對於本身不穩定或半穩定系統施加的干擾和外部行為方面。通過建構一個實物裝置來展示理論，並進一步比較從牛頓力學中得出的實際物理和電腦模擬結果。為了進行比較，設計一個滿足系統要求的滿意控制器是必要的。在裝置和控制方面，引入了一個比例-積分-微分（PID）控制器，用於平衡平台上的球。進一步進行分析以確定在穩定自然不穩定或半穩定系統時的限制，並檢查這些限制與理論期望之間的差異。&lt;/p&gt;
 &lt;p&gt;整篇論文中應用的控制是線性類型，僅能在線性控制範圍內正常運作。使用標準元件和微控制器，構建了一個裝置來維持平台上的球。通過使用Arduino庫和開源代碼進行編程。因此，出於研究目的，看看該裝置是否能夠在線性控制領域內正常運作。&lt;/p&gt;
-&lt;p&gt;總之，這篇論文將首先通過計算機輔助程序來涵蓋球在平台上的理論模型。然後將理論結果與從實物構造中獲得的結果進行比較。進一步檢查控制理論和系統實施方面的差異原因。&lt;/p&gt;</content><category term="w10"></category><category term="網誌編寫"></category></entry><entry><title>協同產品設計實習 W9</title><link href="./2024-Spring-w9-blog-tutorial.html" rel="alternate"></link><published>2024-04-18T13:20:00+08:00</published><updated>2024-04-25T07:57:42+08:00</updated><author><name>41023132</name></author><id>tag:None,2024-04-18:./2024-Spring-w9-blog-tutorial.html</id><summary type="html">&lt;p&gt;2024 Spring W8 CLASS CONTENT.&lt;/p&gt;
+&lt;p&gt;總之，這篇論文將首先通過計算機輔助程序來涵蓋球在平台上的理論模型。然後將理論結果與從實物構造中獲得的結果進行比較。進一步檢查控制理論和系統實施方面的差異原因。&lt;/p&gt;</content><category term="w10"></category><category term="網誌編寫"></category></entry><entry><title>協同產品設計實習 W9</title><link href="./2024-Spring-w9-blog-tutorial.html" rel="alternate"></link><published>2024-04-18T13:20:00+08:00</published><updated>2024-05-16T05:42:41+08:00</updated><author><name>41023132</name></author><id>tag:None,2024-04-18:./2024-Spring-w9-blog-tutorial.html</id><summary type="html">&lt;p&gt;2024 Spring W8 CLASS CONTENT.&lt;/p&gt;
 </summary><content type="html">&lt;p&gt;2024 Spring W8 CLASS CONTENT.&lt;/p&gt;
 
 
 &lt;h1&gt;w9-0418 Class Content&lt;/h1&gt;
+&lt;h2&gt;心得&lt;/h2&gt;
+&lt;p&gt;這週再用自評，我給自己打的分數是７０，&lt;/p&gt;
+&lt;p&gt;我覺得重修讓我懂得更努力上課、做作業，&lt;/p&gt;
+&lt;p&gt;不像以前靠別人，現在所有的東西都需要靠自己。&lt;/p&gt;
 &lt;h2&gt;期中考週&lt;/h2&gt;
-&lt;p&gt;進入自評連結填入個人帳號、組別和自評分數&lt;/p&gt;</content><category term="w9"></category><category term="網誌編寫"></category></entry><entry><title>協同產品設計實習 W8</title><link href="./2024-Spring-w8-blog-tutorial.html" rel="alternate"></link><published>2024-04-11T13:20:00+08:00</published><updated>2024-04-11T06:57:56+08:00</updated><author><name>41023132</name></author><id>tag:None,2024-04-11:./2024-Spring-w8-blog-tutorial.html</id><summary type="html">&lt;p&gt;2024 Spring W8 CLASS CONTENT.&lt;/p&gt;
-</summary><content type="html">&lt;p&gt;2024 Spring W8 CLASS CONTENT.&lt;/p&gt;
-
-
-&lt;h1&gt;w8-0411 Class Content&lt;/h1&gt;</content><category term="w8"></category><category term="網誌編寫"></category></entry><entry><title>協同產品設計實習 W6</title><link href="./2024-Spring-w6-blog-tutorial.html" rel="alternate"></link><published>2024-03-28T13:20:00+08:00</published><updated>2024-04-16T13:51:03+08:00</updated><author><name>41023132</name></author><id>tag:None,2024-03-28:./2024-Spring-w6-blog-tutorial.html</id><summary type="html">&lt;p&gt;2024 Spring W6 CLASS CONTENT.&lt;/p&gt;
+&lt;p&gt;進入自評連結填入個人帳號、組別和自評分數&lt;/p&gt;</content><category term="w9"></category><category term="網誌編寫"></category></entry><entry><title>協同產品設計實習 W6</title><link href="./2024-Spring-w6-blog-tutorial.html" rel="alternate"></link><published>2024-03-28T13:20:00+08:00</published><updated>2024-05-16T05:38:45+08:00</updated><author><name>41023132</name></author><id>tag:None,2024-03-28:./2024-Spring-w6-blog-tutorial.html</id><summary type="html">&lt;p&gt;2024 Spring W6 CLASS CONTENT.&lt;/p&gt;
 </summary><content type="html">&lt;p&gt;2024 Spring W6 CLASS CONTENT.&lt;/p&gt;
 
 
+&lt;h1&gt;心得&lt;/h1&gt;
+&lt;p&gt;上週上傳論文翻譯的作業，這週上傳教學影片的整理。&lt;/p&gt;
+&lt;p&gt;影片的長度有長有短，有些還不懂的影片，透過加字幕，&lt;/p&gt;
+&lt;p&gt;將我原本不懂的地方，變得更懂。&lt;/p&gt;
 &lt;h1&gt;w6-0328 Class Content&lt;/h1&gt;
 &lt;h2&gt;ODOO PLM 論文中英並列任務&lt;/h2&gt;
 &lt;p&gt;由各組員在其個人的 cd2024 倉儲中, 以 LaTeX 格式分工完成下列文章的英文與中文翻譯並列資料, 最後在分組網站的 Release 或 downloads 區完成 2b-midbgx_report.pdf 的製作.&lt;/p&gt;
 &lt;p&gt;若要在近端使用可攜程式環境編譯分組 LaTeX 報告, 請下載 miktex-portable.7z (需要密碼, 下載 167MB, 解開壓縮檔案後約 1GB) 以及參考資料: latex_images_github.7z (需要密碼)&lt;/p&gt;
 &lt;p&gt;2021 ANALYSIS OF THE ODOO SOFTWARE CAPABILITIES REGARDING PRODUCT LIFECYCLE MANAGEMENT, MANUFACTURING EXECUTION SYSTEMS AND THEIR INTEGRATION.pdf or local download (password required) (Odoo 軟體在產品生命週期管理、製造執行系統及其整合上的功能分析)&lt;/p&gt;
+&lt;p&gt;分工:
+41023132:1-44&lt;/p&gt;
+&lt;p&gt;https://replit.com/@41023132/cd2024#downloads/41023132-P1-44.pdf&lt;/p&gt;
 &lt;p&gt;英文單字查詢: 2021_odoo_reading.html&lt;/p&gt;
 &lt;h2&gt;教學影片分組整理並自評&lt;/h2&gt;
 &lt;p&gt;請各組自行搜尋前面已經發布的教學影片, 分別&lt;/p&gt;
 &lt;p&gt;在影片上填上字幕, 另行上傳到可以嵌入到各分組的網站上
 從影片字幕中整理出逐字稿, 放在影片下方, 以 .txt 連結安排
-並在各嵌入的教學影片下方, 以摘要方式說明該影片的教學重點&lt;/p&gt;</content><category term="w6"></category><category term="網誌編寫"></category></entry><entry><title>協同產品設計實習 W5</title><link href="./2024-Spring-w5-blog-tutorial.html" rel="alternate"></link><published>2024-03-21T13:20:00+08:00</published><updated>2024-04-16T13:49:17+08:00</updated><author><name>41023132</name></author><id>tag:None,2024-03-21:./2024-Spring-w5-blog-tutorial.html</id><summary type="html">&lt;p&gt;2024 Spring W5 CLASS CONTENT.&lt;/p&gt;
+並在各嵌入的教學影片下方, 以摘要方式說明該影片的教學重點&lt;/p&gt;
+&lt;p&gt;以放上網站: https://bx41023132.github.io/cd2024/&lt;/p&gt;</content><category term="w6"></category><category term="網誌編寫"></category></entry><entry><title>協同產品設計實習 W5</title><link href="./2024-Spring-w5-blog-tutorial.html" rel="alternate"></link><published>2024-03-21T13:20:00+08:00</published><updated>2024-05-16T05:35:34+08:00</updated><author><name>41023132</name></author><id>tag:None,2024-03-21:./2024-Spring-w5-blog-tutorial.html</id><summary type="html">&lt;p&gt;2024 Spring W5 CLASS CONTENT.&lt;/p&gt;
 </summary><content type="html">&lt;p&gt;2024 Spring W5 CLASS CONTENT.&lt;/p&gt;
 
 
+&lt;h1&gt;心得&lt;/h1&gt;
+&lt;p&gt;W5需要整理影片、逐字稿，我分配到1-7的影片。預計下次上課前整理完成。&lt;/p&gt;
+&lt;p&gt;經過這次的影片加字幕，某些經常跳過的細節也重新再看一次，讓我更了解其中的做法。&lt;/p&gt;
 &lt;h1&gt;w5-0321 Class Content&lt;/h1&gt;
 &lt;h2&gt;w5 2b 分組任務&lt;/h2&gt;
 &lt;p&gt;請各組自行搜尋前面已經發布的教學影片, 分別&lt;/p&gt;
@@ -85,10 +159,14 @@
 &lt;p&gt;過程中, 各組員必須將個別的網誌 .md 檔案名稱加上前綴字串, 例如: "學號_" 加上獨一無二的網誌 Slug 字串名稱, 且 Category 使用該組員的學號作為標示. 之後各組統整轉檔時, 才不至於發生相同網誌文章檔案名稱衝突的錯誤, 且從各分組網誌的 Categories 中即可找到各組員所編寫的所有網誌內容.&lt;/p&gt;
 &lt;h2&gt;利用 NX1872 協同繪製零組件&lt;/h2&gt;
 &lt;p&gt;從電腦輔助設計室中的電腦 C:\Program Files\Siemens\NX1872 取得所需的 NX 套件目錄檔案, 之後將 NX1872 目錄存入隨身碟後, 可利用下列 start_USB_nx1872.bat 啟動.&lt;/p&gt;
-&lt;p&gt;電腦輔助設計室中 C: 安裝 NX1872, D: 則配置 NX2206 與 NX12, 若在電腦教室則可利用下列批次檔案啟動 NX, 若在各自的電腦或隨身碟帶有各版次的 NX 資料, 只需要透過網路取得授權, 就可直接從 USB 中執行各版次的 NX.&lt;/p&gt;</content><category term="w5"></category><category term="網誌編寫"></category></entry><entry><title>協同產品設計實習 W4</title><link href="./2024-Spring-w4-blog-tutorial.html" rel="alternate"></link><published>2024-03-14T13:20:00+08:00</published><updated>2024-04-16T13:43:06+08:00</updated><author><name>41023132</name></author><id>tag:None,2024-03-14:./2024-Spring-w4-blog-tutorial.html</id><summary type="html">&lt;p&gt;2024 Spring W4 CLASS CONTENT.&lt;/p&gt;
+&lt;p&gt;電腦輔助設計室中 C: 安裝 NX1872, D: 則配置 NX2206 與 NX12, 若在電腦教室則可利用下列批次檔案啟動 NX, 若在各自的電腦或隨身碟帶有各版次的 NX 資料, 只需要透過網路取得授權, 就可直接從 USB 中執行各版次的 NX.&lt;/p&gt;</content><category term="w5"></category><category term="網誌編寫"></category></entry><entry><title>協同產品設計實習 W4</title><link href="./2024-Spring-w4-blog-tutorial.html" rel="alternate"></link><published>2024-03-14T13:20:00+08:00</published><updated>2024-05-16T05:32:47+08:00</updated><author><name>41023132</name></author><id>tag:None,2024-03-14:./2024-Spring-w4-blog-tutorial.html</id><summary type="html">&lt;p&gt;2024 Spring W4 CLASS CONTENT.&lt;/p&gt;
 </summary><content type="html">&lt;p&gt;2024 Spring W4 CLASS CONTENT.&lt;/p&gt;
 
 
+&lt;h1&gt;心得&lt;/h1&gt;
+&lt;p&gt;這禮拜要進行的作業是論文翻譯，我分配到1-44頁。&lt;/p&gt;
+&lt;p&gt;我打算每天分配一點作業量，在下次上課前處理完成。&lt;/p&gt;
+&lt;p&gt;利用replit進行個人網站的git push，很順利。&lt;/p&gt;
 &lt;h1&gt;w4-0314 Class Content&lt;/h1&gt;
 &lt;h2&gt;論文翻譯&lt;/h2&gt;
 &lt;p&gt;工作分配:41023132 P1-44
@@ -100,16 +178,22 @@ https://replit.com/@41023132/cd2024#downloads/41023132-P1-44.pdf&lt;/p&gt;
 &lt;h1&gt;Replit 靜態網站檢視&lt;/h1&gt;
 &lt;p&gt;下載 main2.txt 與 static.txt, 其中包含 main2.py 與 static.py, 只要在 Shell 執行 python3 main2.py 就可以執行倉儲內的靜態網站檢視. 另一方面, 若要取消先前執行 python3 main2.py, 只需要在 Shell 頁面按下 ctrl + c, c 代表 cancle 也就是取消. 然後若要執行動態網站，可以在 Shell 執行 python3 main.py 或者使用 Replit 的 Run 按鍵.&lt;/p&gt;
 &lt;p&gt;說明如何在 Replit 檢視靜態網站教學影片&lt;/p&gt;
-&lt;p&gt;說明如何下載 replit_main2.7z 並在倉儲中建立兩個檔案教學影片&lt;/p&gt;</content><category term="w4"></category><category term="網誌編寫"></category></entry><entry><title>協同產品設計實習 W3</title><link href="./2024-Spring-w3-blog-tutorial.html" rel="alternate"></link><published>2024-03-07T13:20:00+08:00</published><updated>2024-04-11T06:46:30+08:00</updated><author><name>41023132</name></author><id>tag:None,2024-03-07:./2024-Spring-w3-blog-tutorial.html</id><summary type="html">&lt;p&gt;2024 Spring W3 CLASS CONTENT.&lt;/p&gt;
+&lt;p&gt;說明如何下載 replit_main2.7z 並在倉儲中建立兩個檔案教學影片&lt;/p&gt;</content><category term="w4"></category><category term="網誌編寫"></category></entry><entry><title>協同產品設計實習 W3</title><link href="./2024-Spring-w3-blog-tutorial.html" rel="alternate"></link><published>2024-03-07T13:20:00+08:00</published><updated>2024-05-16T05:29:54+08:00</updated><author><name>41023132</name></author><id>tag:None,2024-03-07:./2024-Spring-w3-blog-tutorial.html</id><summary type="html">&lt;p&gt;2024 Spring W3 CLASS CONTENT.&lt;/p&gt;
 </summary><content type="html">&lt;p&gt;2024 Spring W3 CLASS CONTENT.&lt;/p&gt;
 
+&lt;h1&gt;心得&lt;/h1&gt;
+&lt;p&gt;創建分組網站，利用codespace進行git push的動作。&lt;/p&gt;
+&lt;p&gt;並需要列出分組倉儲及網站。&lt;/p&gt;
 &lt;h1&gt;w3-0307 Class Content&lt;/h1&gt;
 &lt;h2&gt;列出期中分組倉儲與網站&lt;/h2&gt;
 &lt;p&gt;2b 分組倉儲 classroom invitation:https://classroom.github.com/a/KJjlY-0&lt;/p&gt;
 &lt;p&gt;midbg8倉儲:https://github.com/mdecd2024/2b-midbg8&lt;/p&gt;
-&lt;p&gt;分組網站:https://mdecd2024.github.io/2b-midbg8/&lt;/p&gt;</content><category term="w3"></category><category term="網誌編寫"></category></entry><entry><title>協同產品設計實習 W2</title><link href="./2024-Spring-w2-blog-tutorial.html" rel="alternate"></link><published>2024-02-29T13:20:00+08:00</published><updated>2024-04-11T06:46:30+08:00</updated><author><name>41023132</name></author><id>tag:None,2024-02-29:./2024-Spring-w2-blog-tutorial.html</id><summary type="html">&lt;p&gt;2024 Spring W2 CLASS CONTENT.&lt;/p&gt;
+&lt;p&gt;分組網站:https://mdecd2024.github.io/2b-midbg8/&lt;/p&gt;</content><category term="w3"></category><category term="網誌編寫"></category></entry><entry><title>協同產品設計實習 W2</title><link href="./2024-Spring-w2-blog-tutorial.html" rel="alternate"></link><published>2024-02-29T13:20:00+08:00</published><updated>2024-05-16T05:28:11+08:00</updated><author><name>41023132</name></author><id>tag:None,2024-02-29:./2024-Spring-w2-blog-tutorial.html</id><summary type="html">&lt;p&gt;2024 Spring W2 CLASS CONTENT.&lt;/p&gt;
 </summary><content type="html">&lt;p&gt;2024 Spring W2 CLASS CONTENT.&lt;/p&gt;
 
+&lt;h1&gt;心得&lt;/h1&gt;
+&lt;p&gt;這禮拜在分組，我們這組只有兩個人，雖然之後作業要負擔的量很大，但我們還是會全力以赴。&lt;/p&gt;
+&lt;p&gt;成功加入Classroom、分組倉儲。&lt;/p&gt;
 &lt;h1&gt;w2-0229 Class Content&lt;/h1&gt;
 &lt;h2&gt;分組分工&lt;/h2&gt;
 &lt;p&gt;2b-midbg8組員:&lt;/p&gt;
@@ -121,10 +205,13 @@ https://replit.com/@41023132/cd2024#downloads/41023132-P1-44.pdf&lt;/p&gt;
 &lt;p&gt;分組網站:https://mdecd2024.github.io/2b-midbg8/&lt;/p&gt;
 &lt;h2&gt;利用 Github Classroom 指定分組倉儲&lt;/h2&gt;
 &lt;p&gt;由於各分組網站從 Github Classroom 執行配置, 因此該倉儲位於 mdecd2024 帳號下, 雖然各組組員具備對此分組倉儲改版的權限, 但是若將分組倉儲 import 到 Replit, 因為其倉儲擁有者為 mdecd2024, 因此無法從 Replit accoount 項下進行授權, 但是可以利用 ssh-keygen 建立 .ssh 目錄下的 id_rsa 與 id_rsa.pub, 之後除了將公鑰送到 Github 之外, 還需要在 .ssh 目錄中建立 config, 且將倉儲 .git/config 中的 https 協定改為 SSH.&lt;/p&gt;
-&lt;p&gt;根據上述流程, 可以在 Replit 中以 SSH 模式取得對 Github 帳號下特定倉儲的改版全縣, 只不過 Replit 的免費帳號環境會不定時刪除 /home/runner/.ssh 目錄中的授權資料, 因此若要使用 Replit 維護從 Github Classroom 取得授權的分組倉儲, 必須使用程式方法配置 .ssh 中的 id_rsa 與 config 檔案.&lt;/p&gt;</content><category term="w2"></category><category term="網誌編寫"></category></entry><entry><title>協同產品設計實習 W1</title><link href="./2024-Spring-w1-blog-tutorial.html" rel="alternate"></link><published>2024-02-22T13:20:00+08:00</published><updated>2024-04-11T06:46:30+08:00</updated><author><name>41023132</name></author><id>tag:None,2024-02-22:./2024-Spring-w1-blog-tutorial.html</id><summary type="html">&lt;p&gt;2024 Spring W1 CLASS CONTENT.&lt;/p&gt;
+&lt;p&gt;根據上述流程, 可以在 Replit 中以 SSH 模式取得對 Github 帳號下特定倉儲的改版全縣, 只不過 Replit 的免費帳號環境會不定時刪除 /home/runner/.ssh 目錄中的授權資料, 因此若要使用 Replit 維護從 Github Classroom 取得授權的分組倉儲, 必須使用程式方法配置 .ssh 中的 id_rsa 與 config 檔案.&lt;/p&gt;</content><category term="w2"></category><category term="網誌編寫"></category></entry><entry><title>協同產品設計實習 W1</title><link href="./2024-Spring-w1-blog-tutorial.html" rel="alternate"></link><published>2024-02-22T13:20:00+08:00</published><updated>2024-05-16T05:23:11+08:00</updated><author><name>41023132</name></author><id>tag:None,2024-02-22:./2024-Spring-w1-blog-tutorial.html</id><summary type="html">&lt;p&gt;2024 Spring W1 CLASS CONTENT.&lt;/p&gt;
 </summary><content type="html">&lt;p&gt;2024 Spring W1 CLASS CONTENT.&lt;/p&gt;
 
 
+&lt;h1&gt;心得&lt;/h1&gt;
+&lt;p&gt;第一周上課，因為是重修所以我更認真聽課，目前進度跟得上。&lt;/p&gt;
+&lt;p&gt;這周主要是介紹一些軟體的應用及上課的進度。&lt;/p&gt;
 &lt;h1&gt;w1-0222 Class Content&lt;/h1&gt;
 &lt;p&gt;使用者可以自行利用 &lt;a href="https://github.com/mdecycu/cmsimde_site"&gt;cmsimde_site&lt;/a&gt; 倉儲作為 Template, 建立自己的網站內容管理系統.&lt;/p&gt;
 &lt;p&gt;引用網站網址連結的方法:&lt;/p&gt;
