@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>41023132協同產品設計實習 - w12</title><link href="./" rel="alternate"></link><link href="./feeds/w12.atom.xml" rel="self"></link><id>./</id><updated>2024-05-16T05:52:24+08:00</updated><entry><title>協同產品設計實習 W12</title><link href="./2024-Spring-w12-blog-tutorial.html" rel="alternate"></link><published>2024-05-09T13:20:00+08:00</published><updated>2024-05-16T05:52:24+08:00</updated><author><name>41023132</name></author><id>tag:None,2024-05-09:./2024-Spring-w12-blog-tutorial.html</id><summary type="html">&lt;p&gt;2024 Spring W12 CLASS CONTENT.&lt;/p&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>41023132協同產品設計實習 - w12</title><link href="./" rel="alternate"></link><link href="./feeds/w12.atom.xml" rel="self"></link><id>./</id><updated>2024-05-20T12:00:13+08:00</updated><entry><title>協同產品設計實習 W12</title><link href="./2024-Spring-w12-blog-tutorial.html" rel="alternate"></link><published>2024-05-09T13:20:00+08:00</published><updated>2024-05-20T12:00:13+08:00</updated><author><name>41023132</name></author><id>tag:None,2024-05-09:./2024-Spring-w12-blog-tutorial.html</id><summary type="html">&lt;p&gt;2024 Spring W12 CLASS CONTENT.&lt;/p&gt;
 </summary><content type="html">&lt;p&gt;2024 Spring W12 CLASS CONTENT.&lt;/p&gt;
 
 
@@ -8,9 +8,9 @@
 &lt;p&gt;這個任務可以讓我更清楚程式的應用。&lt;/p&gt;
 &lt;h1&gt;w12-0509 Class Content&lt;/h1&gt;
 &lt;h2&gt;實習任務一&lt;/h2&gt;
-&lt;p&gt;以W12 blog 影片中說明如何設定 Siemens NX Journal 存檔格式, 並且利用 NXOpen 程式分別執行建立 block 與挖孔 (透過錄製 Journal 程式產生)後, 請設法將兩個程式合併為一個程式, 可以直接完成建立一個 block 並在其特定面上挖孔.
-https://replit.com/@41023132/cd2024#downloads/journal.py
-https://replit.com/@41023132/cd2024#downloads/nxopen_create_a_new_part.py&lt;/p&gt;
+&lt;p&gt;以W12 blog 影片中說明如何設定 Siemens NX Journal 存檔格式, 並且利用 NXOpen 程式分別執行建立 block 與挖孔 (透過錄製 Journal 程式產生)後, 請設法將兩個程式合併為一個程式, 可以直接完成建立一個 block 並在其特定面上挖孔.&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://replit.com/@41023132/cd2024#downloads/journal.py"&gt;journal.py&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;https://replit.com/@41023132/cd2024#downloads/nxopen_create_a_new_part.py&lt;/p&gt;
 &lt;h2&gt;實習任務二: 將分組倉儲設為評分網站子模組&lt;/h2&gt;
 &lt;p&gt;2a 評分倉儲: https://github.com/mdecd2024/2astud-2asite&lt;/p&gt;
 &lt;p&gt;2b 評分倉儲: https://github.com/mdecd2024/2bstud-2bsite&lt;/p&gt;
