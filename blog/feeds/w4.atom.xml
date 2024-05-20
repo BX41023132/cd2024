@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>41023132協同產品設計實習 - w4</title><link href="./" rel="alternate"></link><link href="./feeds/w4.atom.xml" rel="self"></link><id>./</id><updated>2024-05-16T05:32:47+08:00</updated><entry><title>協同產品設計實習 W4</title><link href="./2024-Spring-w4-blog-tutorial.html" rel="alternate"></link><published>2024-03-14T13:20:00+08:00</published><updated>2024-05-16T05:32:47+08:00</updated><author><name>41023132</name></author><id>tag:None,2024-03-14:./2024-Spring-w4-blog-tutorial.html</id><summary type="html">&lt;p&gt;2024 Spring W4 CLASS CONTENT.&lt;/p&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>41023132協同產品設計實習 - w4</title><link href="./" rel="alternate"></link><link href="./feeds/w4.atom.xml" rel="self"></link><id>./</id><updated>2024-05-20T12:11:31+08:00</updated><entry><title>協同產品設計實習 W4</title><link href="./2024-Spring-w4-blog-tutorial.html" rel="alternate"></link><published>2024-03-14T13:20:00+08:00</published><updated>2024-05-20T12:11:31+08:00</updated><author><name>41023132</name></author><id>tag:None,2024-03-14:./2024-Spring-w4-blog-tutorial.html</id><summary type="html">&lt;p&gt;2024 Spring W4 CLASS CONTENT.&lt;/p&gt;
 </summary><content type="html">&lt;p&gt;2024 Spring W4 CLASS CONTENT.&lt;/p&gt;
 
 
@@ -9,8 +9,8 @@
 &lt;p&gt;利用replit進行個人網站的git push，很順利。&lt;/p&gt;
 &lt;h1&gt;w4-0314 Class Content&lt;/h1&gt;
 &lt;h2&gt;論文翻譯&lt;/h2&gt;
-&lt;p&gt;工作分配:41023132 P1-44
-https://replit.com/@41023132/cd2024#downloads/41023132-P1-44.pdf&lt;/p&gt;
+&lt;p&gt;工作分配:41023132 P1-44&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://replit.com/@41023132/cd2024#downloads/41023132-P1-44.pdf"&gt;p1-44&lt;/a&gt;&lt;/p&gt;
 &lt;h1&gt;Odoo 參考文章中英並列&lt;/h1&gt;
 &lt;p&gt;教學影片: 以第六組為例, 利用 Codespaces 維護倉儲內容&lt;/p&gt;
 &lt;p&gt;教學影片: 如何利用 Github Actions 編譯 LaTeX 得到分組 pdf 報告&lt;/p&gt;
