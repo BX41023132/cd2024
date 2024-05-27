@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>41023132協同產品設計實習 - w11</title><link href="./" rel="alternate"></link><link href="./feeds/w11.atom.xml" rel="self"></link><id>./</id><updated>2024-05-20T12:08:40+08:00</updated><entry><title>協同產品設計實習 W11</title><link href="./2024-Spring-w11-blog-tutorial.html" rel="alternate"></link><published>2024-05-02T13:20:00+08:00</published><updated>2024-05-20T12:08:40+08:00</updated><author><name>41023132</name></author><id>tag:None,2024-05-02:./2024-Spring-w11-blog-tutorial.html</id><summary type="html">&lt;p&gt;2024 Spring W11 CLASS CONTENT.&lt;/p&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>41023132協同產品設計實習 - w11</title><link href="./" rel="alternate"></link><link href="./feeds/w11.atom.xml" rel="self"></link><id>./</id><updated>2024-05-23T07:59:01+08:00</updated><entry><title>協同產品設計實習 W11</title><link href="./2024-Spring-w11-blog-tutorial.html" rel="alternate"></link><published>2024-05-02T13:20:00+08:00</published><updated>2024-05-23T07:59:01+08:00</updated><author><name>41023132</name></author><id>tag:None,2024-05-02:./2024-Spring-w11-blog-tutorial.html</id><summary type="html">&lt;p&gt;2024 Spring W11 CLASS CONTENT.&lt;/p&gt;
 </summary><content type="html">&lt;p&gt;2024 Spring W11 CLASS CONTENT.&lt;/p&gt;
 
 
@@ -13,14 +13,19 @@
 利用 Siemens NX1872.7z 
 (需要登入 @nfu.edu.tw, cd2024 採用電腦安裝的 NX1872 或隨身碟中的 NX1872) 
 執行零組件繪圖, 完成後請將過程影片放入個人與分組網站中.&lt;/p&gt;
-&lt;p&gt;分工:&lt;/p&gt;
+&lt;h2&gt;工作分配:&lt;/h2&gt;
 &lt;p&gt;41039138&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://replit.com/@41023132/cd2024#downloads/platform.prt"&gt;platform&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://drive.google.com/file/d/1zIHRIq_ERUROuSvUynqLWAY5SgbMeiN4/view?usp=drive_link"&gt;platform&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://drive.google.com/file/d/1ixMI4ExmwielRL4yjZ8b7BJl4AvHFM5X/view?usp=drive_link"&gt;platform圖片&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;41023132&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://replit.com/@41023132/cd2024#downloads/base.prt"&gt;base&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://replit.com/@41023132/cd2024#downloads/s_link.prt"&gt;s link&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://replit.com/@41023132/cd2024#downloads/shaft.prt"&gt;shaft&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://replit.com/@41023132/cd2024#downloads/y_link.prt"&gt;y link&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://drive.google.com/file/d/1_5Q4m5je0MN0wPjHaWeIL6yHv9x5JLo6/view?usp=drive_link"&gt;base&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://drive.google.com/file/d/1gTZHO1VbIdwkLRdBY_dDaOoLtAKQ2Eog/view?usp=drive_link"&gt;base圖片&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://drive.google.com/file/d/1Dv6r-_rla3Q3DiMhiXjVshK04RQG8Hyc/view?usp=drive_link"&gt;s link&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://drive.google.com/file/d/1lfTwUk5Y_xr2nVvUieI6vZJr2G-cT3Od/view?usp=drive_link"&gt;s link圖片&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://drive.google.com/file/d/1bsKtXR-mHJjv_zWGwbQsGYqpmL4LVsbx/view?usp=drive_link"&gt;shaft&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://drive.google.com/file/d/1zMKmNboKB_iXmcWgdGhIuf20dYxbkCbN/view?usp=drive_link"&gt;shaft圖片&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://drive.google.com/file/d/1d4Vug0XfPz2ExGvpVWbHs9kx1-u-VPU1/view?usp=drive_link"&gt;y link&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://drive.google.com/file/d/1Tbw5hYA6Ydyg6e1kBMrA13NQy9ahUy2h/view?usp=drive_link"&gt;y link圖片&lt;/a&gt;&lt;/p&gt;
 &lt;h2&gt;各週指定任務如下&lt;/h2&gt;
 &lt;p&gt;1.個人 cd2024 與分組倉儲的建立及維護.&lt;/p&gt;
 &lt;p&gt;2.各分組註冊一個 Odoo 帳號, 選用免費的 PLM 模組, 取得各分組的產品生命週期管理系統網域, 並將參考論文的協同翻譯流程作為工作項目, 在各分組的 PLM 網域系統中留下任務分配與紀錄, 最終產出為一份參考論文的中英文翻譯並列 pdf 檔案, 其中包含各組員的心得報告.&lt;/p&gt;
