@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>41023132協同產品設計實習 - w12</title><link href="./" rel="alternate"></link><link href="./feeds/w12.atom.xml" rel="self"></link><id>./</id><updated>2024-05-23T07:57:33+08:00</updated><entry><title>協同產品設計實習 W12</title><link href="./2024-Spring-w12-blog-tutorial.html" rel="alternate"></link><published>2024-05-09T13:20:00+08:00</published><updated>2024-05-23T07:57:33+08:00</updated><author><name>41023132</name></author><id>tag:None,2024-05-09:./2024-Spring-w12-blog-tutorial.html</id><summary type="html">&lt;p&gt;2024 Spring W12 CLASS CONTENT.&lt;/p&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>41023132協同產品設計實習 - w12</title><link href="./" rel="alternate"></link><link href="./feeds/w12.atom.xml" rel="self"></link><id>./</id><updated>2024-06-06T06:27:05+08:00</updated><entry><title>協同產品設計實習 W12</title><link href="./2024-Spring-w12-blog-tutorial.html" rel="alternate"></link><published>2024-05-09T13:20:00+08:00</published><updated>2024-06-06T06:27:05+08:00</updated><author><name>41023132</name></author><id>tag:None,2024-05-09:./2024-Spring-w12-blog-tutorial.html</id><summary type="html">&lt;p&gt;2024 Spring W12 CLASS CONTENT.&lt;/p&gt;
 </summary><content type="html">&lt;p&gt;2024 Spring W12 CLASS CONTENT.&lt;/p&gt;
 
 
@@ -25,6 +25,13 @@
 &lt;h2&gt;實習任務三: 跨網路操控足球機器人進行競技&lt;/h2&gt;
 &lt;p&gt;操控足球機器人進行競技:(41039138)&lt;/p&gt;
 &lt;p&gt;繪製競技足球相關零件:(41023132)&lt;/p&gt;
+&lt;p&gt;球場參考規格:&lt;/p&gt;
+&lt;p&gt;競技球: 白色, 直徑 0.1m, 重量 0.5kg&lt;/p&gt;
+&lt;p&gt;場地: 長 4m x 寬 2.5m, 外圍以足夠高度之隱形柵欄區隔&lt;/p&gt;
+&lt;p&gt;足球門: 長 0.6m, 高 0.3m, 寬 0.1m&lt;/p&gt;
+&lt;p&gt;籃板: 長 0.3m, 高 0.3m, 寬 0.1m, 位於足球門上方中央&lt;/p&gt;
+&lt;p&gt;籃框: 由籃板向場內距離 0.1m, 內徑 0.2m, 框管直徑 0.02&lt;/p&gt;
+&lt;p&gt;球員尺寸範圍: 長寬高各 0.2m, 重量 5kg&lt;/p&gt;
 &lt;p&gt;&lt;a href="https://drive.google.com/file/d/14qBd0F_TtcKnVi-7i4sGsBO_LfSksYsO/view?usp=drive_link"&gt;球場&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;&lt;a href="https://drive.google.com/file/d/1htX1jAnFyEqV3iCdO8xW71biD8qxOj1b/view?usp=drive_link"&gt;球員&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;&lt;a href="https://drive.google.com/file/d/1vBT2HPVWGzMjjmmwAjgn-W0AbagQqGMO/view?usp=drive_link"&gt;競技球&lt;/a&gt;&lt;/p&gt;
