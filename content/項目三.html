@@ -142,7 +142,122 @@ img.add_border {
           </div>
 
         </header>
-    <div id="tipue_search_content">項目二 << <a href='項目二.html'>Previous</a> <a href='cmsimde.html'>Next</a> >> cmsimde<br /><h1>項目三</h1><br />項目二 << <a href='項目二.html'>Previous</a> <a href='cmsimde.html'>Next</a> >> cmsimde</div>
+    <div id="tipue_search_content">項目二 << <a href='項目二.html'>Previous</a> <a href='cmsimde.html'>Next</a> >> cmsimde<br /><h1>項目三</h1>
+<p><span>將所完成的機器人球員放入 CoppeliaSim 運動場景中</span></p>
+<p><span></span></p>
+<p><iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="allowfullscreen" frameborder="0" height="315" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/b4xO8x9NhS8?si=3vkXGUFK2-s88K2V" title="YouTube video player" width="560"></iframe> <iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="allowfullscreen" frameborder="0" height="315" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/zKplfg0z3jg?si=jd6HFIN2-mNYFMAf" title="YouTube video player" width="560"></iframe></p>
+<p></p>
+<p></p>
+<p>程式碼</p>
+<p><span># pip install pyzmq cbor keyboard</span></p>
+<p><span>from zmqRemoteApi import RemoteAPIClient</span></p>
+<p><span>from zmqRemoteApi_IPv6 import RemoteAPIClient</span></p>
+<p><span>import keyboard</span></p>
+<p><span>import random</span></p>
+<p><span>import math</span></p>
+<p><span>import time</span></p>
+<p><span> </span></p>
+<p><span># </span>創建遠程客戶端</p>
+<p><span>client = RemoteAPIClient('fe80::510d:5d19:ba9e:3297%14', 23000)</span></p>
+<p><span>print('Program started')</span></p>
+<p><span># </span>獲取仿真實例</p>
+<p><span>sim = client.getObject('sim')</span></p>
+<p><span>print('Simulation started')</span></p>
+<p><span> </span></p>
+<p><span># </span>初始速度和角度</p>
+<p><span>v = 8</span></p>
+<p><span>a = 40</span></p>
+<p><span> </span></p>
+<p><span># </span>選擇控制的球員</p>
+<p><span>player = '/a_player1'</span></p>
+<p><span> </span></p>
+<p><span># </span>控制機器人速度的函數</p>
+<p><span>def setVelocity(lfwV, rfwV, lbwV, rbwV):</span></p>
+<p><span>    leftMotor1 = sim.getObject(player + '/joint_lf')</span></p>
+<p><span>    rightMotor1 = sim.getObject(player + '/joint_rf')</span></p>
+<p><span>    leftMotor2 = sim.getObject(player + '/joint_lb')</span></p>
+<p><span>    rightMotor2 = sim.getObject(player + '/joint_rb')</span></p>
+<p><span>    sim.setJointTargetVelocity(leftMotor1, lfwV)</span></p>
+<p><span>    sim.setJointTargetVelocity(rightMotor1, rfwV)</span></p>
+<p><span>    sim.setJointTargetVelocity(leftMotor2, lbwV)</span></p>
+<p><span>    sim.setJointTargetVelocity(rightMotor2, rbwV)</span></p>
+<p><span> </span></p>
+<p><span># </span>控制機器人角度的函數</p>
+<p><span>def setAngle(y):</span></p>
+<p><span>    ontology = sim.getObject(player)</span></p>
+<p><span>    angle = [-90*math.pi/180, y*math.pi/180, 0*math.pi/180]</span></p>
+<p><span>    leftMotor = sim.getObject(player + '/joint_lf')</span></p>
+<p><span>    rightMotor = sim.getObject(player + '/joint_rf')</span></p>
+<p><span>    sim.setObjectOrientation(leftMotor, ontology, angle)</span></p>
+<p><span>    sim.setObjectOrientation(rightMotor, ontology, angle)</span></p>
+<p><span> </span></p>
+<p><span># </span>控制機器人移動的函數</p>
+<p><span>def playerControl(x, y):</span></p>
+<p><span>    if keyboard.is_pressed('w'):</span></p>
+<p><span>        setVelocity(x, x, x, x)</span></p>
+<p><span>        controlAngle(y)</span></p>
+<p><span>    elif keyboard.is_pressed('s'):</span></p>
+<p><span>        setVelocity(-x, -x, -x, -x)</span></p>
+<p><span>        controlAngle(y)</span></p>
+<p><span>    elif keyboard.is_pressed('a'):</span></p>
+<p><span>        setVelocity(-x, x, -x, x)</span></p>
+<p><span>    elif keyboard.is_pressed('d'):</span></p>
+<p><span>        setVelocity(x, -x, x, -x)</span></p>
+<p><span>    elif keyboard.is_pressed('space'):</span></p>
+<p><span>        turnover()</span></p>
+<p><span>    elif keyboard.is_pressed('q'):</span></p>
+<p><span>        sim.stopSimulation()</span></p>
+<p><span>    else:</span></p>
+<p><span>        setVelocity(0, 0, 0, 0)</span></p>
+<p><span>        setAngle(0)</span></p>
+<p><span> </span></p>
+<p><span># </span>控制角度的函數</p>
+<p><span>def controlAngle(y):</span></p>
+<p><span>    if keyboard.is_pressed('a'):</span></p>
+<p><span>        setAngle(-y)</span></p>
+<p><span>    elif keyboard.is_pressed('d'):</span></p>
+<p><span>        setAngle(y)</span></p>
+<p><span>    else:</span></p>
+<p><span>        setAngle(0)</span></p>
+<p><span> </span></p>
+<p><span># </span>讓機器人轉身的函數</p>
+<p><span>def turnover():</span></p>
+<p><span>    floor = sim.getObject('/Floor')</span></p>
+<p><span>    player1 = sim.getObject(player)</span></p>
+<p><span>    orientation = sim.getObjectOrientation(player1, floor)</span></p>
+<p><span>    position = sim.getObjectPosition(player1, floor)</span></p>
+<p><span>    orientation[0] = 0</span></p>
+<p><span>    orientation[1] = 0</span></p>
+<p><span>    position[2] = 0.3</span></p>
+<p><span>    sim.setObjectPosition(player1, floor, position)</span></p>
+<p><span>    sim.setObjectOrientation(player1, floor, orientation)</span></p>
+<p><span> </span></p>
+<p><span># </span>检测碰撞的函数</p>
+<p><span>def detectCollision():</span></p>
+<p><span>    distance = 0.05  # </span>需要根据实际情况设置</p>
+<p><span>    # </span>检查两个机器人之间的距离是否小于<span>0.1mm</span></p>
+<p><span>    # </span>这里仅作示例，实际实现可能需要根据场景调整</p>
+<p><span>    return distance &lt; 0.1</span></p>
+<p><span> </span></p>
+<p><span># </span>投球的函数</p>
+<p><span>def throwBall():</span></p>
+<p><span>    print("</span>投籃中<span>...")</span></p>
+<p><span>    time.sleep(2)  # </span>模拟投篮过程，等待<span>2</span>秒</p>
+<p><span>    if random.random() &lt; 0.8:  # 80%</span>的成功率</p>
+<p><span>        print("</span>投籃成功！<span>")</span></p>
+<p><span>    else:</span></p>
+<p><span>        print("</span>投籃失敗！<span>")</span></p>
+<p><span> </span></p>
+<p><span># </span>主循环</p>
+<p><span>while True:</span></p>
+<p><span>    if keyboard.is_pressed('shift'):</span></p>
+<p><span>        playerControl(v+4, a-20)</span></p>
+<p><span>    else:</span></p>
+<p><span>        playerControl(v, a)</span></p>
+<p><span> </span></p>
+<p><span>    # </span>如果检测到按下<span> 'j' </span>键并且检测到碰撞，则投球</p>
+<p><span>    if keyboard.is_pressed('j') and detectCollision():</span></p>
+<p><span>        throwBall()  # </span>投球</p><br />項目二 << <a href='項目二.html'>Previous</a> <a href='cmsimde.html'>Next</a> >> cmsimde</div>
 
     <!-- footer -->
       <div class="container">
